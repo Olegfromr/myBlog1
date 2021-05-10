@@ -12,7 +12,6 @@ require "first.php";
 	{
 ?>
 <?php	require "articles/bootstrap.html"; ?>
-<?php	require "home/prodayushay_stranica_na_bootstrap.min.html"; ?>
 <?php
 	} elseif ($st=='bootstrap')
 	{
@@ -63,7 +62,21 @@ require "first.php";
 			</div>
 		</main>
 		
+					<div class="mb-2 mt-4">
+	<p class="title">
+		<strong>В другом месте</strong>
+	</p>
+	<div class="content">
+		<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href='https://github.com/Olegfromr/myBlog1'>GitHub</a>
+				</li>
+		</ul>
+	</div>
+	</div>
+	
 		</div>
 	</div>
+	
 </body>
 </html>
