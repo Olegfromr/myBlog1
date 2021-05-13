@@ -112,6 +112,17 @@ require "yandex_metrika.html";
     ?>
         <a class="nav-link" href="index.php?s=about">О сайте</a>
       </li>
+		  <?php 
+	if ($st=="different" && !empty($st))
+	{
+		echo '<li class="nav-item active">';
+	}else
+	{
+		echo '<li class="nav-item">';
+	}
+    ?>
+        <a class="nav-link" href="index.php?s=different">Разное</a>
+      </li>
     </ul>
 
 <!-- мой код !!! -->

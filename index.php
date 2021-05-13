@@ -11,6 +11,7 @@ require "first.php";
 	if (empty($st))
 	{
 ?>
+<?php	require "articles/posudomoika.html"; ?>
 <?php	require "articles/bootstrap.html"; ?>
 <?php
 	} elseif ($st=='bootstrap')
@@ -53,6 +54,9 @@ require "first.php";
 	} elseif ($st=='about')
 	{
 		require "about.php";
+	} elseif ($st=='different')
+	{
+		require "articles/posudomoika.html";
 	} elseif (!empty($_GET['searchid']) || !empty($_GET['text']))
 	{
 		;
@@ -77,6 +81,9 @@ require "first.php";
 	
 		</div>
 	</div>
+<?php
+require "footer.php";
+?>
 	
 </body>
 </html>

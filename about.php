@@ -1,8 +1,3 @@
-<div class="container" id="middle">
-	<div class="row">
-		<main class="col-lg-8"> 
-			<div class="article-list">
-				<section class="mb-5 my-4">
 <h2 class="header">О сайте</h2>
 <div class="description">
 <p>Здравствуйте, меня зовут Олег.</p>
