@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">		
 <meta name="description" content="Блог о программировании, веб-разработке и обо мне."/>
 <meta property="og:description" content="Блог о программировании, веб-разработке и обо мне."/>
-<meta name="keywords" content="сайт,блог,статьи,программист,создание сайтов,проекты,портфолио,php,mysql,programming,web"/>
+<meta name="keywords" content="сайт,блог,статьи,программист,создание сайтов,проекты,портфолио,php,mysql,programming,web,посудомоечная"/>
 						<!-- Icons -->
 <link rel="shortcut icon" href="file-earmark-diff.svg" type="image/x-icon">
 <meta name="theme-color" content="#ffffff">
@@ -60,7 +60,7 @@ require "yandex_metrika.html";
 <header>
 <h1 id="h1" ><a href="index.php">Блог программиста</a></h1>
 </header>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -80,9 +80,8 @@ require "yandex_metrika.html";
 		echo '<li class="nav-item">';
 	}
     ?>
-        <a class="nav-link" href="index.php"> Главная<span class="sr-only">(current)</span>
-</a>
-	</li>
+        <a class="nav-link" href="index.php"> Главная<span class="sr-only">(current)</span>  
+        </a></li>
 		  <?php 
 	if ($st=='articles' && !empty($st))
 	{

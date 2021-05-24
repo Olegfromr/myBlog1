@@ -5,25 +5,41 @@ require "first.php";
 	<div class="row">
 		<main class="col-lg-8"> 
 			<div class="article-list">
-				<section class="mb-5 my-4">
 <?php
 	$st=isset ($_GET['s']) ? $_GET['s'] : 0;
 	if (empty($st))
 	{
 ?>
+				<section class="my-4">
 <?php	require "articles/posudomoika.html"; ?>
+				</section>
+				<section class="my-4">
+<a class="btn btn-primary" href="?s=different&st=posudomoika" role="button">Дальше...</a>
+<!-- <button type="button" class="btn btn-primary">Дальше...</button> -->
+				</section>
+				<section class="my-4">
 <?php	require "articles/bootstrap.html"; ?>
+				</section>
+				<section class="my-4">
+<a class="btn btn-primary" href="?s=articles&st=bootstrap" role="button">Дальше...</a>
+				</section>
+<!-- <button type="button" class="btn btn-primary">Дальше...</button> -->
+
 <?php
-	} elseif ($st=='bootstrap')
+	} elseif ($st=='articles')
 	{
-		$st1=isset ($_GET['st1']) ? $_GET['st1'] : 0;
-		if (empty($st1))
+?>				<section class="my-4">
+<?php
+		$st1=isset ($_GET['st']) ? $_GET['st'] : 0;
+		if ($st1=='bootstrap')
 		{
-			require "bootstrap/bootstrap.html";
+			require "articles/bootstrap.html";
+			require "articles/bootstrap2.html";
 		} elseif ($st1=='prodayushay_stranica_na_bootstrap')
 		{
 			require "bootstrap/prodayushay_stranica_na_bootstrap.html";
 		}
+?> </section> <?php
 	} elseif ($st=='rubric')
 	{
 		$st1=isset ($_GET['st']) ? $_GET['st'] : 0;
@@ -56,7 +72,10 @@ require "first.php";
 		require "about.php";
 	} elseif ($st=='different')
 	{
+?>				<section class="my-4"> <?php
 		require "articles/posudomoika.html";
+		require "articles/posudomoika2.html";
+		?> </section>  <?php
 	} elseif (!empty($_GET['searchid']) || !empty($_GET['text']))
 	{
 		;
@@ -66,7 +85,8 @@ require "first.php";
 			</div>
 		</main>
 		
-					<div class="mb-2 mt-4">
+<aside class="col-md-auto">
+<div class="mb-2 mt-4">
 	<p class="title">
 		<strong>В другом месте</strong>
 	</p>
@@ -77,8 +97,8 @@ require "first.php";
 				</li>
 		</ul>
 	</div>
-	</div>
-	
+</div>
+</aside>	
 		</div>
 	</div>
 <?php
